@@ -27,8 +27,10 @@ class App extends Component {
             <Route path="/user/:id" component={Users} />
             <Route path="/r1" component={User} />
             <Route path="/r2" component={Contact} />
+            {/* if not found Redirect to / or  component={Notfound} */}
             <Redirect to="/" />
             <Route component={Notfound} />
+             {/* if not found */}
           </Switch>
         </div>
       </div>
